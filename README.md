@@ -36,40 +36,38 @@ Treat this as a **pull request review and fix**. A teammate has opened a PR with
 >
 > **Testing:** Applied successfully for `acme-health` tenant in the dev environment. Namespace created, pods can access S3, Redis is reachable, schema init ran cleanly.
 
-## Target Time: 60 minutes
+## Target Time: 90 minutes
 
-We respect your time. This should take about an hour. If you find yourself going over, submit what you have with a note about what you'd prioritize next. We're evaluating your judgment and reasoning, not completeness.
+We respect your time. This should take about 90 minutes. If you find yourself going over, submit what you have with a note about what you'd prioritize next. We're primarily evaluating your judgment and reasoning..
 
 ## What to Submit
 
-1. A modified `terraform/main.tf` with your fixes applied
+1. A modified terraform module with your fixes applied
 2. A `DECISIONS.md` file explaining your changes (see format below)
 
 ## Your Tasks
 
-Review `terraform/main.tf` as you would for a real teammate, then fix it:
+Review `terraform/main.tf` as you would for a real teammate in a PR review, but then fix it:
 
 1. **Identify issues** and categorize each as:
    - **Blocking** — you'd request changes; must be fixed before merge
    - **Suggestion** — worth improving but wouldn't hold up the PR
    - **Question** — ambiguous; you'd ask the author for context before deciding
 
-2. **Fix your blocking issues** directly in `terraform/main.tf`. We want to see working code, not just descriptions of what you'd change. Your fixes should be production-ready — the kind of code you'd approve in a PR.
+2. **Fix issues** directly. We want to see working code, not just descriptions of what you'd change. Your fixes should be production-ready — the kind of code you'd approve in a PR.
 
-3. **Check the requirements** — did the author meet them all? Anything missing or only partially addressed? If you add resources to close gaps, include them in your modified `main.tf`.
+3. **Check the requirements** — did the author meet them all? Anything missing or only partially addressed? If you add resources to close gaps, include them in your modified final draft.
 
 ## DECISIONS.md Format
 
 Use whatever structure works for you. We care about clear reasoning, not formatting. At minimum:
 - Issues found with category (blocking / suggestion / question)
-- For each blocking issue you fixed: what was wrong, what breaks in production if merged as-is, and why your fix addresses it
+- For each issue you fixed: what was wrong, what breaks in production if merged as-is, and why your fix addresses it
 - Whether requirements were met
 - Any suggestions you chose not to implement and why (time, tradeoffs, needs more context)
 - Any questions you'd leave as PR comments for the author
 
 ## Notes
 
-- Use whatever tools and resources you normally would.
 - Our live technical debrief will focus on your reasoning — be prepared to explain your decisions, discuss alternatives, and walk through failure scenarios.
-- If something is ambiguous, make a defensible call and note your assumption. "I'd ask the author" is a valid answer.
-- Not everything is wrong — part of a good review is recognizing what's done well.
+- If something is ambiguous, make a defensible call and note your assumption.
