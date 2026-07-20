@@ -69,6 +69,6 @@ Use whatever structure works for you. We care about clear reasoning, not formatt
 
 ## Notes
 
-- We prefer no AI tooling is used (e.g., Copilot, ChatGPT, Claude). This exercise is designed to evaluate your Terraform and infrastructure knowledge directly. If you do use AI assistance, please disclose what you used and how.
+- We ask that no AI tooling is used (e.g., Copilot, ChatGPT, Claude). This exercise is designed to evaluate your Terraform and infrastructure knowledge directly. If you do use AI assistance, please disclose what you used and how.
 - Our live technical debrief will focus on your reasoning — be prepared to explain your decisions, discuss alternatives, and walk through failure scenarios.
 - If something is ambiguous, make a defensible call and note your assumption.
