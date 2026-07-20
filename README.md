@@ -2,7 +2,7 @@
 
 ## Overview
 
-Treat this as a **pull request review**. A teammate has opened a PR with the following description:
+Treat this as a **pull request review and fix**. A teammate has opened a PR with the following description:
 
 > **PR Title:** feat: add tenant provisioning module
 >
@@ -42,31 +42,29 @@ We respect your time. This should take about an hour. If you find yourself going
 
 ## What to Submit
 
-1. A `DECISIONS.md` file with your review (see format below)
-2. Optionally, modified `main.tf` showing how you'd fix your blocking items
+1. A modified `terraform/main.tf` with your fixes applied
+2. A `DECISIONS.md` file explaining your changes (see format below)
 
 ## Your Tasks
 
-Review `terraform/main.tf` as you would for a real teammate:
+Review `terraform/main.tf` as you would for a real teammate, then fix it:
 
 1. **Identify issues** and categorize each as:
    - **Blocking** — you'd request changes; must be fixed before merge
    - **Suggestion** — worth improving but wouldn't hold up the PR
    - **Question** — ambiguous; you'd ask the author for context before deciding
 
-2. **For your top 3 blocking issues**, explain:
-   - What's wrong
-   - What specifically breaks in production if merged as-is
-   - How you'd fix it (code change or describe the approach)
+2. **Fix your blocking issues** directly in `terraform/main.tf`. We want to see working code, not just descriptions of what you'd change. Your fixes should be production-ready — the kind of code you'd approve in a PR.
 
-3. **Check the requirements** — did the author meet them all? Anything missing or only partially addressed?
+3. **Check the requirements** — did the author meet them all? Anything missing or only partially addressed? If you add resources to close gaps, include them in your modified `main.tf`.
 
 ## DECISIONS.md Format
 
 Use whatever structure works for you. We care about clear reasoning, not formatting. At minimum:
 - Issues found with category (blocking / suggestion / question)
-- Your top 3 blockers with production impact and fix
+- For each blocking issue you fixed: what was wrong, what breaks in production if merged as-is, and why your fix addresses it
 - Whether requirements were met
+- Any suggestions you chose not to implement and why (time, tradeoffs, needs more context)
 - Any questions you'd leave as PR comments for the author
 
 ## Notes
